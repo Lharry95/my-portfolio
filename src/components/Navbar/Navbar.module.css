@@ -1,0 +1,52 @@
+.header {
+  position: fixed; /* Stays at top even when scrolling */
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-height);
+  background-color: rgba(10, 15, 30, 0.85); /* Semi-transparent — 85% opacity */
+  backdrop-filter: blur(10px); /* Frosted glass effect on content behind it */
+  z-index: 100; /* Sits on top of everything else on the page */
+  border-bottom: 1px solid rgba(100, 255, 218, 0.1); /* Subtle accent border */
+}
+
+.nav {
+  max-width: var(--max-width);
+  height: 100%;
+  margin: 0 auto; /* Centers the content horizontally */
+  padding: 0 var(--space-md);
+  display: flex;
+  align-items: center; /* Vertically centres items */
+  justify-content: space-between; /* Pushes logo left, links right */
+}
+
+.logo {
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  color: var(--color-accent);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.logo:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.navList {
+  display: flex;
+  gap: var(--space-md); /* Space between each link */
+  list-style: none; /* Removes bullet points */
+}
+
+.navLink {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-text);
+  transition: color 0.2s ease; /* Smooth colour change on hover */
+}
+
+.navLink:hover {
+  color: var(--color-accent);
+  text-decoration: none;
+}

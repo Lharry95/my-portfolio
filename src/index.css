@@ -1,0 +1,66 @@
+:root {
+  /* Colours */
+  --color-bg: #0a0f1e; /* Deep navy — main background */
+  --color-bg-light: #112240; /* Slightly lighter navy — card backgrounds */
+  --color-accent: #64ffda; /* Teal/mint — your highlight colour */
+  --color-text: #ccd6f6; /* Soft white — main body text */
+  --color-text-muted: #8892b0; /* Slate grey — secondary text */
+  --color-white: #e6f1ff; /* Near white — headings */
+
+  /* Typography */
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "Fira Code", monospace;
+
+  /* Spacing — consistent spacing scale */
+  --space-xs: 0.5rem; /*  8px */
+  --space-sm: 1rem; /* 16px */
+  --space-md: 2rem; /* 32px */
+  --space-lg: 4rem; /* 64px */
+  --space-xl: 8rem; /* 128px */
+
+  /* Layout */
+  --max-width: 1000px; /* Maximum content width — keeps lines readable */
+  --nav-height: 70px;
+}
+
+/* --- Reset ---
+   Browsers apply their own default styles (margins, padding, box sizing).
+   This "reset" removes those defaults so we start from a clean slate. */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Makes width calculations predictable */
+}
+
+/* --- Base Styles --- */
+html {
+  scroll-behavior: smooth; /* Smooth scroll when clicking nav links */
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6; /* Space between lines — improves readability */
+}
+
+/* --- Typography defaults --- */
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  text-decoration: underline;
+}
