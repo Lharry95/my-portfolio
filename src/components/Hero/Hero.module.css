@@ -80,7 +80,7 @@
 }
 
 .btnPrimary:hover {
-  background-color: rgba(197, 69, 150, 0.1);
+  background-color: rgb(225, 150, 219);
   text-decoration: none;
 }
 
@@ -98,8 +98,8 @@
 }
 
 .btnSecondary:hover {
-  border-color: var(--color-accent);
-  color: var(--color-accent);
+  border-color: rgb(225, 150, 219);
+  color: rgb(225, 150, 219);
   text-decoration: none;
 }
 
