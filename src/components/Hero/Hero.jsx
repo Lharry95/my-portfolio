@@ -11,8 +11,8 @@ function Hero() {
 
           <p className={styles.bio}>
             I'm a web developer based in Auckland, NZ. A career changer from the
-            government sector with a passion for building clean, pruposeful
-            digital experiences. Currently available for freelanec work.
+            government sector with a passion for building clean, purposeful
+            digital experiences. Currently available for freelance work.
           </p>
 
           <div className={styles.callToAction}>
