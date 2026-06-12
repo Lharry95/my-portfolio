@@ -1,0 +1,104 @@
+.about {
+  padding: var(--space-xl) var(--space-md);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* --- Section title --- */
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  font-size: clamp(1.5rem, 3vw, 1.8rem);
+  color: var(--color-white);
+  margin-bottom: var(--space-lg);
+  white-space: nowrap;
+}
+
+/* The horizontal line after the title.*/
+.sectionTitle::after {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: var(--color-bg-light);
+  flex: 1;
+  margin-left: var(--space-md);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+/* --- Text column --- */
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.text p {
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* --- CV download button --- */
+.cvButton {
+  display: inline-block;
+  margin-top: var(--space-sm);
+  padding: 0.85rem 1.75rem;
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  width: fit-content;
+}
+
+.cvButton:hover {
+  background-color: rgba(197, 69, 150, 0.1);
+  text-decoration: none;
+}
+
+/* --- Photo wrapper --- */
+.photoWrapper {
+  display: flex;
+  justify-content: end;
+  padding-right: 5rem;
+  align-items: flex-start;
+  padding-top: var(--space-xs);
+}
+
+/* --- Photo placeholder --- */
+.photoPlaceholder {
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 1;
+  background-color: var(--color-bg-light);
+  border: 2px solid var(--color-accent);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 6px 6px 0px var(--color-accent);
+}
+
+.photoPlaceholder span {
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  color: var(--color-accent);
+  letter-spacing: 2px;
+}
+
+@media (max-width: 650px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .photoWrapper {
+    justify-content: center;
+  }
+}

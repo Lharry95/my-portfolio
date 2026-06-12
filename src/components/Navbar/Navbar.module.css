@@ -50,3 +50,10 @@
   color: var(--color-accent);
   text-decoration: none;
 }
+
+@media (max-width: 650px) {
+  .logo {
+    font-size: 0.7rem;
+    justify-content: center;
+  }
+}
