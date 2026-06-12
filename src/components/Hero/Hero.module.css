@@ -1,0 +1,116 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+  padding-top: var(--nav-height);
+}
+
+.content {
+  max-width: 600px;
+}
+
+.greeting {
+  font-family: var(--font-mono);
+  color: var(--color-accent);
+  font-size: 1rem;
+  margin-bottom: var(--space-xs);
+  animation: fadeSlideUp 0.5s ease forwards;
+  animation-delay: 0.1s;
+  opacity: 0;
+}
+
+.name {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  color: var(--color-white);
+  line-height: 1.1;
+  margin-bottom: var(--space-xs);
+
+  animation: fadeSlideUp 0.5s ease forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.tagline {
+  font-size: clamp(1.5rem, 4vw, 2.8rem);
+  color: var(--color-text-muted);
+  line-height: 1.2;
+  margin-bottom: var(--space-md);
+
+  animation: fadeSlideUp 0.5s ease forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+
+.bio {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  max-width: 65ch;
+  line-height: 1.7;
+  margin-bottom: var(--space-md);
+
+  animation: fadeSlideUp 0.5s ease forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+.callToAction {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+
+  animation: fadeSlideUp 0.5s ease forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+/* see my work btn */
+.btnPrimary {
+  display: inline-block;
+  padding: 0.85rem 1.75rem;
+  border: 1px solid var(--color-accent);
+  background-color: transparent;
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btnPrimary:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+  text-decoration: none;
+}
+
+/* get in touch btn */
+.btnSecondary {
+  display: inline-block;
+  padding: 0.85rem 1.75rem;
+  border: 1px solid var(--color-text-muted);
+  background-color: transparent;
+  color: var(--color-text);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  border-radius: 4px;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.btnSecondary:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+/* --- Fade + Slide Up Animation --- */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Start 20px below */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at natural position */
+  }
+}
