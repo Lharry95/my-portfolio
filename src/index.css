@@ -19,7 +19,7 @@
   --space-xl: 8rem; /* 128px */
 
   /* Layout */
-  --max-width: 1000px; /* Maximum content width — keeps lines readable */
+  --max-width: 1000px;
   --nav-height: 70px;
 }
 
@@ -33,7 +33,7 @@
 
 /* --- Base Styles --- */
 html {
-  scroll-behavior: smooth; /* Smooth scroll when clicking nav links */
+  scroll-behavior: smooth;
 }
 
 body {
