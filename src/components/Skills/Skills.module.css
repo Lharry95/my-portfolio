@@ -1,0 +1,76 @@
+.skills {
+  padding: var(--space-xl) var(--space-md);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  font-size: clamp(1.5rem, 3vw, 1.8rem);
+  color: var(--color-white);
+  margin-bottom: var(--space-lg);
+  white-space: nowrap;
+}
+
+.sectionTitle::after {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: var(--color-bg-light);
+  flex: 1;
+  margin-left: var(--space-md);
+}
+
+/* --- Three-column grid for the skill groups ---
+    */
+.groups {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.group {
+  background-color: var(--color-bg-light);
+  border-radius: 8px;
+  padding: var(--space-md);
+  border-left: 2px solid var(--color-accent);
+}
+
+.groupTitle {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  margin-bottom: var(--space-sm);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.skillList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  list-style: none;
+}
+
+.skillTag {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-text);
+  background-color: rgba(197, 69, 150, 0.08);
+  border: 1px solid rgba(197, 69, 150, 0.2);
+  padding: 4px 12px;
+  border-radius: 20px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.skillTag:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+@media (max-width: 650px) {
+  .groups {
+    grid-template-columns: 1fr;
+  }
+}
