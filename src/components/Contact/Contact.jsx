@@ -10,7 +10,7 @@ const contactLinks = [
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/Lharyzza",
+    href: "https://www.linkedin.com/in/lharyzza-va-ai-499447147/",
     display: "linkedin.com/in/Lharyzza",
     ariaLabel: "Visit my LinkedIn profile",
   },

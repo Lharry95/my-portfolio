@@ -2,7 +2,7 @@ import styles from "./Footer.module.css";
 
 function Footer() {
   return (
-    <footer className={stles.footer}>
+    <footer className={styles.footer}>
       <a href="#hero" className={styles.backToTop}>
         ↑ Back to top
       </a>
@@ -20,3 +20,5 @@ function Footer() {
     </footer>
   );
 }
+
+export default Footer;
