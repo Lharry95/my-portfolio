@@ -3,6 +3,10 @@
 
    This file is a "data layer" — it holds content
    separately from the UI that displays it.
+
+   Each object represents one project card.
+   The "image" field points to a file in public/images/
+   referenced from the root as "/images/filename.png"
    ============================================ */
 
 const projects = [
@@ -10,22 +14,25 @@ const projects = [
     id: 1,
     title: "CAS — IFC Parser & 3D Viewer",
     description:
-      "A browser-based BIM tool that lets users upload IFC building files and explore them as interactive 3D models. Parses IFC4 schema data: entities, quantities, materials, and structural relationships. It displays them in a collapsible panel alongside the 3D canvas. Built as part of a professional client project.",
+      "A browser-based BIM tool that lets users upload IFC building files and explore them as interactive 3D models. Parses IFC4 schema data: entities, quantities, materials, and structural relationships. Displays them in a collapsible panel alongside the 3D canvas. Built as part of a professional client project.",
     tech: ["JavaScript", "Three.js", "web-ifc", "Tailwind CSS"],
     role: "Frontend & CSS Styling",
     github: "https://github.com/Lharry95",
     demo: null,
+    // Path is relative to the public/ folder — no import needed
+    image: "/images/cas.png",
     featured: true,
   },
   {
     id: 2,
-    title: "Turners — Car Auction Marketplace",
+    title: "TradeMe — Auction Marketplace",
     description:
-      "A full-stack MERN application for a car auction platform. Features include vehicle listings, user authentication, and a purchase flow. Built in a team of three using agile practices with a Trello board and regular standups.",
+      "A full-stack MERN application for an auction platform. Features include product listings, bidding options and purchase flow. Built in a team of three using agile practices with a Trello board and regular standups.",
     tech: ["React", "Node.js", "Express", "MongoDB"],
     role: "Frontend & CSS Styling",
     github: "https://github.com/Lharry95/Mission-5-phase-2-turners-robots",
     demo: null,
+    image: "/images/trademe.png",
     featured: true,
   },
   {
@@ -37,6 +44,7 @@ const projects = [
     role: "Solo Project",
     github: "https://github.com/Lharry95/Mission-1-lvl4-AutismPage",
     demo: null,
+    image: "/images/autism.png",
     featured: false,
   },
   {
@@ -48,6 +56,7 @@ const projects = [
     role: "Solo Project",
     github: "https://github.com/Lharry95/Mission2",
     demo: null,
+    image: "/images/mission2.png",
     featured: false,
   },
   {
@@ -59,6 +68,7 @@ const projects = [
     role: "Solo Project",
     github: "https://github.com/Lharry95/CI-Practice",
     demo: null,
+    image: "/images/cicd.png",
     featured: false,
   },
 ];

@@ -130,6 +130,26 @@
   border-radius: 20px;
 }
 
+.cardImage {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 4px;
+  margin-bottom: var(--space-sm);
+}
+
+.cardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .cardImage img {
+  transform: scale(1.03);
+}
+
 @media (max-width: 768px) {
   .featured {
     grid-template-columns: 1fr;
