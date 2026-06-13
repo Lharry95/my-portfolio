@@ -1,0 +1,85 @@
+/* ============================================
+   CONTACT STYLES — Contact.module.css
+   ============================================ */
+
+.contact {
+  padding: var(--space-xl) var(--space-md);
+  max-width: 600px; /* Narrower than other sections — */
+  margin: 0 auto; /* centres the content and feels intimate */
+  text-align: center; /* Centre-aligned contact section is standard */
+}
+
+/* Small monospace label above the main heading */
+.overline {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--color-accent);
+  margin-bottom: var(--space-xs);
+}
+
+.heading {
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--color-white);
+  margin-bottom: var(--space-md);
+}
+
+.body {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 50ch;
+  margin: 0 auto var(--space-lg); /* centres the paragraph and adds space below */
+}
+
+/* --- Contact links list ---
+   Each item is a row with label + link side by side */
+.linkList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  text-align: left; /* Override the section's centre-align for the list */
+  max-width: 420px;
+  margin: 0 auto; /* Centre the list block within the section */
+}
+
+.linkItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-bg-light);
+  border-radius: 6px;
+  /* Subtle left border — same design language as the Skills cards */
+  border-left: 2px solid var(--color-accent);
+  transition: transform 0.2s ease;
+}
+
+.linkItem:hover {
+  /* Lift on hover — same pattern as project cards */
+  transform: translateX(4px);
+}
+
+/* The "Email", "LinkedIn", "GitHub" label on the left */
+.linkLabel {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  /* min-width stops the label column from collapsing
+     when the link text is short */
+  min-width: 80px;
+}
+
+/* The clickable link on the right */
+.link {
+  font-size: 0.9rem;
+  color: var(--color-text);
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--color-accent);
+  text-decoration: none;
+}

@@ -1,4 +1,5 @@
 import About from "./components/About/About";
+import Contact from "./components/Contact/Contact.jsx";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 import Projects from "./components/Projects/Projects.jsx";
@@ -13,7 +14,9 @@ function App() {
         <About />
         <Projects />
         <Skills />
+        <Contact />
       </main>
+      <Footer />
     </div>
   );
 }
