@@ -1,7 +1,11 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-})
+
+  // MUST match GitHub repository name exactly.
+  // If repo is named 'my-portfolio', this is '/my-portfolio/'
+  // If ever rename the repo, update this to match.
+  base: "/my-portfolio/",
+});
