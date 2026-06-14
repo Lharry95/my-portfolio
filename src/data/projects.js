@@ -20,7 +20,7 @@ const projects = [
     github: "https://github.com/Lharry95",
     demo: null,
     // Path is relative to the public/ folder — no import needed
-    image: "/my-portoflio/images/cas.png",
+    image: "/my-portfolio/images/cas.png",
     featured: true,
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     role: "Frontend & CSS Styling",
     github: "https://github.com/Lharry95/Mission-5-phase-2-turners-robots",
     demo: null,
-    image: "/my-portoflio/images/trademe.png",
+    image: "/my-portfolio/images/trademe.png",
     featured: true,
   },
   {
@@ -44,7 +44,7 @@ const projects = [
     role: "Solo Project",
     github: "https://github.com/Lharry95/Mission-1-lvl4-AutismPage",
     demo: null,
-    image: "/my-portoflio/images/autism.png",
+    image: "/my-portfolio/images/autism.png",
     featured: false,
   },
   {
@@ -56,7 +56,7 @@ const projects = [
     role: "Solo Project",
     github: "https://github.com/Lharry95/Mission2",
     demo: null,
-    image: "/my-portoflio/images/mission2.png",
+    image: "/my-portfolio/images/mission2.png",
     featured: false,
   },
   {
@@ -68,7 +68,7 @@ const projects = [
     role: "Solo Project",
     github: "https://github.com/Lharry95/CI-Practice",
     demo: null,
-    image: "/my-portoflio/images/cicd.png",
+    image: "/my-portfolio/images/cicd.png",
     featured: false,
   },
 ];
