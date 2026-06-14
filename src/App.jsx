@@ -5,10 +5,12 @@ import Navbar from "./components/Navbar/Navbar";
 import Projects from "./components/Projects/Projects.jsx";
 import Skills from "./components/Skills/Skills";
 import Footer from "./components/Footer/Footer";
+import Background from "./components/Background/Background";
 
 function App() {
   return (
     <div>
+      <Background />
       <Navbar />
       <main>
         <Hero />
