@@ -35,7 +35,7 @@ function About() {
           </p>
 
           <a
-            href="/my-portoflio/LharyzzaVaai-CV26.pdf"
+            href="/my-portfolio/LharyzzaVaai-CV26.pdf"
             download="LharyzzaVaai-CV26.pdf"
             className={styles.cvButton}
           >
