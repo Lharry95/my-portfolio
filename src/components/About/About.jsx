@@ -28,10 +28,10 @@ function About() {
           </p>
 
           <p>
-            I'm currently available for freelance work across web development,
-            full-stack development and front-end development. If you have a
-            project in mind, or just want to chat about tech, feel free to reach
-            out!
+            I'm currently available for freelance work or employment across web
+            development, full-stack development and front-end development. If
+            you have a project in mind, or just want to chat about tech, feel
+            free to reach out!
           </p>
 
           <a
