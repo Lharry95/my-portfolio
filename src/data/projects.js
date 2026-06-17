@@ -39,7 +39,7 @@ const projects = [
     id: 3,
     title: "Autism Awareness Website",
     description:
-      "An educational website about autism spectrum disorder, built with personal purpose — inspired by my son. Covers what autism is, how to support autistic individuals, and available resources. Designed to be welcoming and accessible.",
+      "An educational website about autism spectrum disorder, built with personal purpose, inspired by my son. Covers what autism is, how to support autistic individuals, and available resources. Designed to be welcoming and accessible.",
     tech: ["HTML", "CSS", "JavaScript"],
     role: "Solo Project",
     github: "https://github.com/Lharry95/Mission-1-lvl4-AutismPage",
@@ -63,7 +63,7 @@ const projects = [
     id: 5,
     title: "CI/CD Practice",
     description:
-      "A hands-on project practising continuous integration and continuous deployment workflows. Demonstrates understanding of automated testing pipelines and deployment processes — skills essential for professional development teams.",
+      "A hands-on project practising continuous integration and continuous deployment workflows. Demonstrates understanding of automated testing pipelines and deployment processes, skills essential for professional development teams.",
     tech: ["HTML", "GitHub Actions"],
     role: "Solo Project",
     github: "https://github.com/Lharry95/CI-Practice",
